@@ -12,7 +12,6 @@ body{
 
 .maincontainer{
     display: flex;
-    min-height: 100%;
     width: 100%;
     justify-content: space-around;
 }
@@ -20,8 +19,12 @@ body{
 .leftcontainer{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+    /* overflow: hidden; */
+    height: 100vh;
+    position: sticky;
+    top:0;
 }
 
 .container{
@@ -80,18 +83,19 @@ h3{
 }
 
 .todocontainer{
-    overflow-y:auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* overflow-y: scroll; */
     margin:10px;
     min-width: 300px;
     display: flex;
-    max-height: 96vh;
+    /* max-height: 96vh; */
     flex-direction: column;
-    /* overflow: hidden; */
 }
 
-.todocontainer::-webkit-scrollbar {
+/* .todocontainer::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .todoelement{
     word-wrap: break-word;
@@ -106,8 +110,7 @@ h3{
     max-width: 800px;
     padding: 3px 10px;
     border-radius: 7px;
-    margin: 20px;
-    /* overflow: hidden; */
+    margin: 30px;
 }
 
 
@@ -152,8 +155,8 @@ h3{
 
 .todooperations{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .todoedit{

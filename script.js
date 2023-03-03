@@ -25,9 +25,10 @@ const load = () => {
             continue;
         }
     }
+
+    maincontainer.style.height = todocontainer.style.height;
 }
 load();
-
 
 
 const all = () =>{
